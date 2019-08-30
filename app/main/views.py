@@ -4,8 +4,9 @@ from ..models import User
 from ..email import send_email
 from . import main
 from .forms import NameForm
+from flask_login import login_required
 
-
+@login_required
 @main.route('/', methods=['GET', 'POST'])
 def index():
     form = NameForm()

@@ -7,4 +7,4 @@ flask-migrate
 flask-mail
 python-dotenv
 pylint-flask
-flask_login
+flask-login
