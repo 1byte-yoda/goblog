@@ -90,9 +90,13 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Clone the repo
+0. Clone the repo
 ```sh
 git clone https://github.com/github_username/repo_name.git
+```
+1. Make sure you are inside the main directory
+```sh
+cd goblog
 ```
 2. Install virtualenv
 ```sh
@@ -102,10 +106,22 @@ pip install virtualenv
 ```sh
 virtualenv venv --python=python3
 ```
-3. Install Python packages
+4. Activate the virtual environment `venv` 
+
+    * For Linux:
+    ```sh
+    source venv/bin/activate
+    ```
+    * For Windows:
+    ```sh
+    venv\Scripts\activate.bat
+    ```
+    
+4. Install Python packages
 ```sh
 pip install -r requirements.txt
 ```
+5. Create .env file in the main directory, then fill in the content inside the `.env.example` file.
 
 
 
